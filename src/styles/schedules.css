@@ -1,0 +1,22 @@
+.schedules-cards {
+  width: 350px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--background-tertiary);
+}
+.schedule-tittles {
+  height: 24px;
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.period-name {
+  color: var(--content-primary);
+  width: 203px;
+}
+.tittle-hour {
+  color: var(--content-secondary);
+}
+

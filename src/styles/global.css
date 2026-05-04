@@ -27,8 +27,17 @@
   margin: 0;
   box-sizing: border-box;
   color: var(--content-primary);
-  background-color: var(--background-tertiary);
 }
+body{
+  background-color: var(--background-primary);
+}
+.label-large{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
 section{
     margin-left: 20px;
 }
@@ -57,7 +66,7 @@ h1 {
   color: var(--content-tertiary);
   font-family: "Inter", sans-serif;
   line-height: 24px;
-  font-family: 14px;
+  font-size: 14px;
   font-weight: 400;
 }
 .label{
