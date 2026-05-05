@@ -28,55 +28,71 @@
   box-sizing: border-box;
   color: var(--content-primary);
 }
-body{
+body {
   background-color: var(--background-primary);
 }
-.label-large{
-    font-family: "Inter", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+.logo {
+  width: 20px;
+  height: 20px;
 }
-.label-medium{
+.name-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 20px;
+
+  border-radius: 0px 0 20px 0;
+  background-color: #2e2c30;
+  width: 153px;
+  height: 48px;
+}
+.name-tittle {
+  width: 89px;
+  height: 24px;
+  font-family: "Familjen Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-size: 16px;
+  font-style: normal;
+  color: var(--content-brand);
+}
+.label-large {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+.label-medium {
   font-family: "Inter", sans-serif;
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
 }
-.paragraph-medium{
+.paragraph-medium {
   font-family: "Inter", sans-serif;
   line-height: 24px;
   font-size: 14px;
   font-weight: 400;
   color: var(--content-secondary);
 }
-section{
-    margin-left: 20px;
+section {
+  margin-left: 20px;
 }
-.name-tittle {
-  width: 153px;
-  height: 48px;
-  font-family: "Familjen Grotesk", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-size: 16px;
-  font-style: normal;
-  background-color: #2e2c30;
-  color: var(--content-brand);
-}
+
 h1 {
   font-family: "Inter Tight", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
 }
-.tittle-description{
-    margin-top: 21px;
+.tittle-description {
+  margin-top: 21px;
 }
-.tittle-description p{
+.tittle-description p {
   margin-top: 4px;
 }
-.label{
+.label {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -86,23 +102,34 @@ h1 {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
 }
-.input-container{
-  margin-top: 12px;
+.input-container {
+  margin: 12px 0 32px;
   padding: 12px;
   display: flex;
   text-align: center;
   align-items: center;
+  overflow: hidden;
   gap: 7px;
   border-radius: 8px;
   border: 1px solid var(--border-primary);
   width: 183px;
   height: 48px;
 }
-.input{
+
+.input {
   color: var(--content-secondary);
+  width: 130px;
   font-size: 16px;
   line-height: 24px;
   font-family: "Inter", sans-serif;
   font-weight: 600;
   border: 0px solid var(--border-primary);
+  background-color: var(--background-primary);
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-image: url(/assets/Arrow.svg);
+  position: relative;
+  top: 6px;
+  width: 20px;
+  height: 20px;
 }

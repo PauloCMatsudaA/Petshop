@@ -1,4 +1,5 @@
 .schedules-cards {
+  margin: 0 auto 12px;
   width: 350px;
   padding: 20px;
   border-radius: 10px;
@@ -12,6 +13,7 @@
   align-items: center;
   gap: 12px;
 }
+
 .period-name {
   color: var(--content-primary);
   width: 203px;
@@ -22,10 +24,18 @@
 .schedule-list{
   list-style-type: none;
 }
+.schedule-details{
+  margin-top: 32px;
+}
+.schedule{
+  border-top: 2px solid var(--border-divisor);
+}
 .hour-scheduled{
+  margin-top:32px;
   color: var(--content-primary);
 }
 .cancel-btn{
+  margin-left: 166px;
   font-family: "Inter", sans-serif;
   font-size: 12px;
   line-height: 16px;
