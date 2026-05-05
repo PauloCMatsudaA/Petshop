@@ -19,4 +19,16 @@
 .tittle-hour {
   color: var(--content-secondary);
 }
-
+.schedule-list{
+  list-style-type: none;
+}
+.hour-scheduled{
+  color: var(--content-primary);
+}
+.cancel-btn{
+  font-family: "Inter", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 300;
+  color: var(--content-tertiary)
+}
