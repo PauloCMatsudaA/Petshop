@@ -36,11 +36,28 @@
   margin-top:32px;
   color: var(--content-primary);
 }
-.cancel-btn{
-  margin-left: 166px;
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 300;
-  color: var(--content-tertiary)
+
+@media screen and (min-width: 1024px) {
+  .schedules-cards{
+    width: 711px;
+    height: 136px;
+  } 
+  .schedule-tittles{
+    width: 711px;
+  }
+  .period-name{
+    width: 564px;
+  }
+  .schedule-details{
+    margin: 20px;
+    gap: 16px;
+    display: flex;
+    flex-direction: row;
+  }
+  .hour-scheduled{
+    margin: 0;
+  }
+  .schedule{
+    height: 100%;
+  }
 }
