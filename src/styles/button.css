@@ -30,6 +30,7 @@
 }
 @media screen and (min-width: 1024px) {
     .btn-section{
+        margin-top: 259px;
         height: 100%;
     }
 }
