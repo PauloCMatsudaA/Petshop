@@ -20,17 +20,17 @@
     font-weight: 700;
     font-size: 16px;
 }
-.cancel-btn{
-  margin-left: 166px;
-  font-family: "Inter", sans-serif;
-  font-size: 12px;
-  line-height: 16px;
-  font-weight: 300;
-  color: var(--content-tertiary)
-}
+
 @media screen and (min-width: 1024px) {
     .btn-section{
-        margin-top: 259px;
+        margin-top: 10px;
         height: 100%;
+        background-color: var(--background-primary);
     }
+    .btn-container{
+        width: 218px;
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
 }
