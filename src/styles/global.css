@@ -129,7 +129,7 @@ h1 {
   background-color: var(--background-primary);
 }
 input[type="date"]::-webkit-calendar-picker-indicator {
-  background-image: url(/assets/Arrow.svg);
+  
   position: relative;
   top: 6px;
   width: 20px;
