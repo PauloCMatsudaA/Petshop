@@ -1,0 +1,79 @@
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 10px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: scroll;
+}
+.closed{
+    opacity: 0;
+}
+.open{
+    opacity: 1;
+}
+.popup {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 837px;
+  margin: 0 auto 0;
+  border-radius: 12px;
+  background-color: var(--background-tertiary);
+}
+.close-btn {
+  width: 13px;
+  height: 13px;
+  margin: 20px 20px 0 auto;
+}
+.popup h2 {
+  margin: 7px auto 0 20px;
+  width: 310px;
+}
+.popup p {
+  margin: 4px auto 0 20px;
+  width: 310px;
+}
+.input-form-container {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  width: 310px;
+  height: 48px;
+  border: 1px solid var(--border-primary);
+  border-radius: 8px;
+}
+.schedule-form {
+  margin: 28px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.schedule-form input {
+  width: 258px;
+  background-color: var(--background-tertiary);
+  border: 0px solid var(--border-primary);
+  border-radius: 8px;
+}
+.img-forms {
+  width: 20px;
+  height: 20px;
+  margin-left: 12px;
+}
+.description-container {
+  height: 110px;
+  align-items: start;
+  padding: 12px 0 0 12px;
+}
+.submit-schedule-btn {
+  width: 123px;
+  height: 48px;
+  margin: 28px 0 auto auto;
+  background-color: var(--content-brand);
+  color: var(--background-primary);
+  border-radius: 8px;
+  border: 0px solid black;
+}

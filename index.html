@@ -21,7 +21,7 @@
       </div>
       <section class="tittle-description">
         <div class="tittle-container">
-          <h1>Sua agenda</h1>
+          <h1 class="tittle">Sua agenda</h1>
           <p class="paragraph-medium">
             Aqui você pode ver todos os clientes e serviços agendados para hoje.
           </p>
@@ -93,9 +93,49 @@
           </li>
         </ul>
       </section>
+
+      <div class="modal closed" id="modal-id">
+        <div class="popup" id="form-schedule">
+          <img src="src/assets/close.svg" class="close-btn" alt="Botão para fechar">
+          <h2 class="tittle">Agende um atendimento</h2>
+          <p class="paragraph-medium">Preencha os dados do cliente para realizar o agendamento:</p>
+          <form class="schedule-form">
+            <label for="name" class="label-medium">Nome do tutor</label>
+            <div class="input-form-container">
+              <img src="src/assets/user.svg" class="img-forms" alt="">
+              <input id="name" type="text" placeholder="Helen Souza" class="input">
+            </div>
+             <label for="petname" class="label-medium">Nome do Pet</label>
+            <div class="input-form-container">
+              <img src="src/assets/Union.svg" alt="Imagem de uma pata representando o animal" class="img-forms">
+             <input id="petname" type="text" placeholder="Cheddar" class="input">
+            </div>
+            <label for="cellphone" class="label-medium">Telefone</label>
+            <div class="input-form-container">
+              <img src="src/assets/Phone.svg" alt="Imagem de um telefone representando o numero de telefone" class="img-forms">
+              <input id="cellphone" type="text" placeholder="(00) 0 0000-0000" class="input">
+            </div>
+            <label for="service" class="label-medium">Descrição do serviço</label>
+            <div class="input-form-container description-container">
+              <input type="text" placeholder="Banho e tosa" id="service" class="input" class="description-form">
+            </div>
+            <label for="date-scheduled" class="label-medium">Data</label>
+            <div class="input-form-container">
+              <img src="src/assets/Calendar Minimalistic.svg" alt="Imagem de uma pata representando o animal" class="img-forms">
+              <input type="date" id="date-scheduled" class="input">
+            </div>
+            <label for="hour" class="label-medium">Hora</label>
+            <div class="input-form-container">  
+              <img src="src/assets/Clock.svg" alt="Imagem de uma pata representando o animal" class="img-forms">    
+              <input type="time" class="input">
+            </div>
+            <button type="submit" form="form-schedule" class="submit-schedule-btn label-large">AGENDAR</button>
+          </form>
+        </div>
+        </div>
         <section class="btn-section">
           <div class="btn-container">
-            <button type="submit" class="btn">NOVO AGENDAMENTO</button>
+            <button type="submit" class="btn" id="schedule-button">NOVO AGENDAMENTO</button>
           </div>
         </section>
   </body>
