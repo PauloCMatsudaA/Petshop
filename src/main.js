@@ -7,3 +7,4 @@ import "./styles/schedules.css"
 import "./styles/popup.css"
 
 import "./button-schedule.js"
+import "./services/modal-create.js"
