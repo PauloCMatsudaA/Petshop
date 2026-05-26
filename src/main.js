@@ -8,3 +8,4 @@ import "./styles/popup.css"
 
 import "./button-schedule.js"
 import "./services/modal-create.js"
+import "./schedules-home.js"

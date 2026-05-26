@@ -1,4 +1,5 @@
 import { formsObject } from "../objects/forms-object";
+import dayjs from "dayjs";
 import { nowDay, nowTime } from "./actualday";
 
 export function createModal(formsObject) {
@@ -59,9 +60,9 @@ export function createModal(formsObject) {
       formDiv.append(img, input);
       divDate.append(formDiv);
       dateLabel.append(label);
-      // input.setAttribute("id", "date-input")
       input.value = nowDay()
       input.min = nowDay()
+    
     } 
     else if (i.id == 6) {
       formDiv.classList.add("date-container");
@@ -69,7 +70,6 @@ export function createModal(formsObject) {
       divDate.append(formDiv);
       dateLabel.append(label);
       forms.append(dateLabel, divDate);
-      // input.setAttribute("id", "hour-input")
       input.value = nowTime()
       input.min = nowTime()
     } 
@@ -89,7 +89,8 @@ export function createModal(formsObject) {
   submitButton.type = "submit";
   submitButton.myFormRef = "form-schedule";
   submitButton.innerHTML = "AGENDAR";
-  submitButton.setAttribute("id", "schedule-send")
+  submitButton.id = "schedule-send"
+
   forms.append(submitButton);
 }
 

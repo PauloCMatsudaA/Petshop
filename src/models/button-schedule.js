@@ -1,6 +1,6 @@
-import { createModal } from "./services/modal-create";
-import { formsObject } from "./objects/forms-object";
-import { schedule } from "./services/schedule";
+import { createModal } from "../services/modal-create";
+import { formsObject } from "../objects/forms-object";
+import { schedule } from "../services/schedule";
 
 
 const button = document.getElementById("schedule-button");
@@ -22,14 +22,15 @@ button.onclick = async (event) => {
 
     const id = new Date().getTime()
     const name = nameInput.value.trim();
+    const pet = petInput.value.trim();
     const phone = numberInput.value.trim();
     const services = servicesInput.value.trim();
     const day = dateInput.value;
     const time = hourInput.value;
-    
+
     
     try {
-      await schedule({id, name, phone, services, day, time})
+      await schedule({id, name, pet, phone, services, day, time})
     } catch (error) {
       console.log(error)
     }
