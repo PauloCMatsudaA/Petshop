@@ -83,6 +83,8 @@ export function createModal(formsObject) {
     input.id = i.name;
     dateLabel.classList.add("date-computer-container");
     divDate.classList.add("date-computer-container");
+
+
   }
   const submitButton = document.createElement("button");
   submitButton.classList.add("submit-schedule-btn", "label-large");
@@ -92,5 +94,6 @@ export function createModal(formsObject) {
   submitButton.id = "schedule-send"
 
   forms.append(submitButton);
+  
 }
 

@@ -22,15 +22,20 @@ export async function selectedDate(selected) {
             createSchedule({ id, name, pet, phone, services, day, time });
             console.log("Aqui")
         } catch (error) {
-            console.log(error)
+            alert("Não foi possivel carregar os agendamentos", error)
         }
       } else if (day != selected) {
-        const element = document.getElementById(`${id}`);
+        try {
+             const element = document.getElementById(`${id}`);
         if(element === null){
             continue
         } else{
         element.remove();
-      }}
+      }
+        } catch (error) {
+            alert("Não foi possivel filtrar as datas", error)
+        }
+       }
     }
   });
 }

@@ -13,7 +13,7 @@ export async function schedule({id, name, pet, phone, services, day, time}) {
             body: JSON.stringify({id, name, pet, phone, services, day, time}),
         })
     }catch(error){
-        console.log(error)
+        alert("Erro ao salvar agendamento")
     }
 
 }
