@@ -5,12 +5,21 @@ import { homeLoad } from "./home-load";
 
 window.addEventListener("click", async (event) => {
     const cancel = event.target.id   
+    const cancelBtnClass = event.target.className
+    if(cancelBtnClass === "cancel-btn"){
+        const li = document.getElementById(`${cancel.toString()}`)
+        try {
+            const response = await fetch(`${url.baseUrl}/schedules/${cancel}`,{
+            method: "DELETE",
+        })
+        } catch (error) {
+            console.log(error)
+        }
+       
+        li.remove()
+        
+    }
 
-    const response = await fetch(`${url.baseUrl}/schedules/${cancel}`,{
-        method: "DELETE",
-    })
-    console.log(`${url.baseUrl}/schedules/${cancel}`)
-    console.log(cancel)
-    
+
 })
 

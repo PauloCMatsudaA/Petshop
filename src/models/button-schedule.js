@@ -12,7 +12,6 @@ button.onclick = async (event) => {
   const scheduleBtn = document.getElementById("schedule-send");
   scheduleBtn.onclick = async (event) => {
     
-    event.preventDefault();
     const nameInput = document.getElementById("User");
     const petInput = document.getElementById("Pet");
     const numberInput = document.getElementById("Phone");

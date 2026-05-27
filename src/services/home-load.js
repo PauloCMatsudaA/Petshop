@@ -43,7 +43,7 @@ export async function homeLoad() {
       for (let i of data) {
         const li = document.createElement("li");
         li.classList.add("schedule");
-
+        li.id = `${i.id}`
         const div = document.createElement("div");
         div.classList.add("schedule-details");
 
