@@ -20,7 +20,7 @@ button.onclick = async (event) => {
     const dateInput = document.getElementById("Calendar");
     const hourInput = document.getElementById("Clock");
 
-    const id = new Date().getTime()
+    const id = new Date().getTime().toString();
     const name = nameInput.value.trim();
     const pet = petInput.value.trim();
     const phone = numberInput.value.trim();
