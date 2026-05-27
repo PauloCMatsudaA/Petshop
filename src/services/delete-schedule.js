@@ -1,6 +1,6 @@
 import { hoursLoad } from "../models/schedules-home";
 import { url } from "./api-config";
-import { homeLoad } from "./home-load";
+import { homeLoad } from "../models/home-load";
 
 
 window.addEventListener("click", async (event) => {

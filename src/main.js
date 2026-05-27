@@ -11,3 +11,4 @@ import "./services/modal-create.js"
 import "./models/schedules-home.js"
 
 import "./services/delete-schedule.js"
+import "./services/selectdate.js"
